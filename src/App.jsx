@@ -33,7 +33,7 @@ function App() {
         <img src={rose} alt="" />
         <div className="box">
           <h1>Will you be mine?</h1>
-          <div className="text" style={{display:"flex", flexDirection:"column", gap:"20px",}}>
+          <div className="text" style={{display:"flex", flexDirection:"column", gap:"18px",}}>
             <p style={{textAlign:"center", fontSize:"30px"}}>💌 A little note for you, straight from my heart ❤️</p>
 
             <TypingText/>
