@@ -204,3 +204,9 @@ body::-webkit-scrollbar {
     width:390px;
   }
 }
+
+@media(max-width:345px){
+  .container .box{
+    width:300px;
+  }
+}
