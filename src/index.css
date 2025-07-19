@@ -20,7 +20,7 @@ body {
 }
 
 .container img {
-  height: 99.5vh;
+  height: 100vh;
   width: 100vw;
   object-fit: cover;
   position: relative;
@@ -28,11 +28,12 @@ body {
   pointer-events: none;
   filter: brightness(0.5);
   animation: bgFade 10s ease-in-out infinite alternate;
+  overflow: hidden;
 }
 
 
 .container .box {
-  width: 500px;
+  width: 550px;
   height: 90vh;
   display: flex;
   justify-content: space-around;
@@ -175,4 +176,12 @@ body::-webkit-scrollbar {
 .container .text p {
   font-size: 22px;
   text-shadow: 2px 2px 20px violet; /* fixed */
+}
+
+
+@media(max-width:450px){
+  .container .box{
+    width: 350px;
+  }
+
 }
