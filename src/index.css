@@ -198,3 +198,9 @@ body::-webkit-scrollbar {
     width:300px;
   }
 }
+
+@media(max-width:420px){
+  .container .box{
+    width:390px;
+  }
+}
