@@ -194,18 +194,24 @@ body::-webkit-scrollbar {
 
 @media(max-width:365px){
   .container .box{
-    width:300px;
+    width:290px;
   }
 }
 
 @media(max-width:420px){
   .container .box{
-    width:380px;
+    width:350px;
   }
 }
 
 @media(max-width:345px){
   .container .box{
     width:300px;
+  }
+}
+
+@media(max-width:330px){
+  .container .box{
+    width:260px;
   }
 }
