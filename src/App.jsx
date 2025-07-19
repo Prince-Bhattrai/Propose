@@ -42,7 +42,7 @@ function App() {
 
           {sayYes && (
             <div style={{padding:"10px"}} className="yes-box" onClick={() => setSayYes(!sayYes)}>
-              <p >My heart is yours, now and forever. You just completed my world 💖</p>
+              <p style={{color:"pink"}} >My heart is yours, now and forever. You just completed my world 💖</p>
 
             </div>
           )}
