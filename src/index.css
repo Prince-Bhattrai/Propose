@@ -185,3 +185,16 @@ body::-webkit-scrollbar {
   }
 
 }
+
+@media(max-width:600px){
+  .container .box{
+    width:500px;
+  }
+}
+
+
+@media(max-width:350px){
+  .container .box{
+    width:300px;
+  }
+}
