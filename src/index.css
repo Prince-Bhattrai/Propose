@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  height: 99.5vh;
+  width: 100vw;
+  object-fit: cover;
+  position: relative;
+  user-select: none;
+  pointer-events: none;
+  filter: brightness(0.5);
+  animation: bgFade 10s ease-in-out infinite alternate;
+}
+
+
+.container .box {
+  width: 500px;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 255, 0.5);
+  padding: 10px;
+
+  box-shadow: 
+    rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px,
+    0 0 40px 10px rgba(0, 0, 255, 0.5);
+
+  animation: pulseBox 3s ease-in-out infinite;
+}
+
+.container .box h1 {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  color: rgba(187, 2, 116, 0.856);
+  font-size: 40px;
+  animation: slideIn 2s ease-in-out;
+}
+
+
+
+.container .yes-box {
+  position: relative;
+  top: 0;
+  position: absolute;
+  bottom: 20px;
+  background-color: purple;
+  height: 20vh;
+  width: 200px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  animation: floatUp 2s ease-out forwards;
+}
+
+.container button {
+  padding: 18px 25px;
+  font-size: 18px;
+  width: 200px;
+  opacity: 0.5;
+  border-radius: 10px;
+  background-color: blueviolet;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: pink;
+  box-shadow: 
+    blueviolet 0px -23px 25px 0px inset,
+    blueviolet 0px -36px 30px 0px inset,
+    blueviolet 0px -79px 40px 0px inset,
+    blueviolet 0px 2px 1px,
+    blueviolet 0px 4px 2px,
+    blueviolet 0px 8px 4px,
+    blueviolet 0px 16px 8px,
+    blueviolet 0px 32px 16px,
+    0 0 50px 20px blueviolet,
+    0 0 40px 10px blueviolet; /* ✅ fixed typo */
+    font-family: 'Brush Script MT', cursive;
+    opacity: 0.8;
+}
+p{
+  color: pink;
+}
+
+.container button:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  box-shadow: 
+    0 0 50px 20px blueviolet,
+    0 0 20px 10px blueviolet inset;
+}
+
+
+/* Animations */
+@keyframes pulseBox {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 40px 10px rgba(0, 0, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 60px 15px rgba(0, 0, 255, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 40px 10px rgba(0, 0, 255, 0.5);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bgFade {
+  0% {
+    filter: brightness(0.4);
+  }
+  100% {
+    filter: brightness(0.6);
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container .text p {
+  font-size: 22px;
+  text-shadow: 2px 2px 20px violet; /* fixed */
+}
