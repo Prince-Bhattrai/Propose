@@ -200,7 +200,7 @@ body::-webkit-scrollbar {
 
 @media(max-width:420px){
   .container .box{
-    width:390px;
+    width:380px;
   }
 }
 
