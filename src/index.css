@@ -110,9 +110,8 @@ body {
     opacity: 0.8;
 }
 p{
-  color: pink;
+  color: rgb(103, 22, 134);
 }
-
 .container button:hover {
   transform: scale(1.05);
   opacity: 0.8;
